@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B350B12AC1FBF5642B0F9E /* Pods_Sherpa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0ECC25AB2BE90CE4B94C5A /* Pods_Sherpa.framework */; };
+		9DAD6B9C2DE364B1A4A55EC6 /* Pods_SherpaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6B38FDE0E0A849741F51F1 /* Pods_SherpaTests.framework */; };
+		BD2AD23B25F0B00D003DA222 /* Bookmark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2AD23925F0B00D003DA222 /* Bookmark+CoreDataClass.swift */; };
+		BD2AD23C25F0B00D003DA222 /* Bookmark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2AD23A25F0B00D003DA222 /* Bookmark+CoreDataProperties.swift */; };
+		BD6E36F2260870AD00E0A271 /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E36F1260870AD00E0A271 /* LogCell.swift */; };
+		BDB7421225FB2FCF00E9A0D1 /* ContactMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7421125FB2FCF00E9A0D1 /* ContactMessageViewController.swift */; };
+		CD0368E525E5DB7C00363BD0 /* Sherpa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD0368E325E5DB7C00363BD0 /* Sherpa.xcdatamodeld */; };
+		CD0368EB25E5DC9E00363BD0 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0368E925E5DC9E00363BD0 /* Contact+CoreDataClass.swift */; };
+		CD0368EC25E5DC9E00363BD0 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0368EA25E5DC9E00363BD0 /* Contact+CoreDataProperties.swift */; };
+		CD0368F825E5E70800363BD0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0368F725E5E70800363BD0 /* CoreDataManager.swift */; };
+		CD2841E825E49EF0000172B8 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2841E725E49EF0000172B8 /* ContactCell.swift */; };
+		CD2841EE25E4B058000172B8 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2841ED25E4B058000172B8 /* Contact.storyboard */; };
+		CD2841F925E4B361000172B8 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2841F825E4B361000172B8 /* ContactViewController.swift */; };
+		CD2841FE25E4DA0C000172B8 /* ContactAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2841FD25E4DA0C000172B8 /* ContactAddViewController.swift */; };
+		CD5DCD1E25E3492C009CE41A /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DCD1D25E3492C009CE41A /* RequestModel.swift */; };
+		CD5DCD2725E34C08009CE41A /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DCD2625E34C08009CE41A /* ResponseModel.swift */; };
+		CD5DCD2F25E34C8B009CE41A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DCD2E25E34C8B009CE41A /* DataModel.swift */; };
+		CD5DCD3725E3930A009CE41A /* LSCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DCD3625E3930A009CE41A /* LSCManager.swift */; };
+		CD74E2C2260310DE007140A4 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD74E2C1260310DE007140A4 /* CustomViews.swift */; };
+		CD778D4F25DF8EA900B27871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778D4E25DF8EA900B27871 /* AppDelegate.swift */; };
+		CD778D5125DF8EA900B27871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778D5025DF8EA900B27871 /* SceneDelegate.swift */; };
+		CD778D5325DF8EA900B27871 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778D5225DF8EA900B27871 /* MainViewController.swift */; };
+		CD778D5625DF8EA900B27871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD778D5425DF8EA900B27871 /* Main.storyboard */; };
+		CD778D5825DF8EAA00B27871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD778D5725DF8EAA00B27871 /* Assets.xcassets */; };
+		CD778D5B25DF8EAA00B27871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD778D5925DF8EAA00B27871 /* LaunchScreen.storyboard */; };
+		CD778D6625DF8EAA00B27871 /* SherpaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778D6525DF8EAA00B27871 /* SherpaTests.swift */; };
+		CD778D7125DF8EAA00B27871 /* SherpaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778D7025DF8EAA00B27871 /* SherpaUITests.swift */; };
+		CD778D9425DF934700B27871 /* DefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778D9325DF934700B27871 /* DefaultData.swift */; };
+		CD778D9C25DF9A9D00B27871 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778D9B25DF9A9D00B27871 /* Extension.swift */; };
+		CD778DA125DFA82500B27871 /* MapCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD778DA025DFA82500B27871 /* MapCalculator.swift */; };
+		CDDCC60E25E8905000C71AD5 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCC60D25E8905000C71AD5 /* RouteViewController.swift */; };
+		CDDCC61625E8905C00C71AD5 /* Route.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDCC61525E8905C00C71AD5 /* Route.storyboard */; };
+		CDDCC61B25E8945800C71AD5 /* RouteBookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCC61A25E8945800C71AD5 /* RouteBookmarkCell.swift */; };
+		CDFB0FC0260C5A6D0083E1B1 /* UUData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB0FBE260C5A6D0083E1B1 /* UUData+CoreDataClass.swift */; };
+		CDFB0FC1260C5A6D0083E1B1 /* UUData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB0FBF260C5A6D0083E1B1 /* UUData+CoreDataProperties.swift */; };
+		CDFC841025E71F7B0014888B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFC840F25E71F7B0014888B /* NetworkManager.swift */; };
+		EFB9F8CED0EAAD68792219BC /* Pods_Sherpa_SherpaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869A0544BA1C66A4ED1F3B15 /* Pods_Sherpa_SherpaUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD778D6225DF8EAA00B27871 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD778D4325DF8EA900B27871 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD778D4A25DF8EA900B27871;
+			remoteInfo = Sherpa;
+		};
+		CD778D6D25DF8EAA00B27871 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD778D4325DF8EA900B27871 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD778D4A25DF8EA900B27871;
+			remoteInfo = Sherpa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E6B38FDE0E0A849741F51F1 /* Pods_SherpaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SherpaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B24EC46A1A210ED1DF03B6 /* Pods-SherpaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SherpaTests.release.xcconfig"; path = "Target Support Files/Pods-SherpaTests/Pods-SherpaTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E8D8E2EA29BA05572654EA7 /* Pods-Sherpa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherpa.release.xcconfig"; path = "Target Support Files/Pods-Sherpa/Pods-Sherpa.release.xcconfig"; sourceTree = "<group>"; };
+		30319C80D32870D43BE6F955 /* Pods-Sherpa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherpa.debug.xcconfig"; path = "Target Support Files/Pods-Sherpa/Pods-Sherpa.debug.xcconfig"; sourceTree = "<group>"; };
+		869A0544BA1C66A4ED1F3B15 /* Pods_Sherpa_SherpaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sherpa_SherpaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3B167B5E2D0433987394FB /* Pods-SherpaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SherpaTests.debug.xcconfig"; path = "Target Support Files/Pods-SherpaTests/Pods-SherpaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD2AD23925F0B00D003DA222 /* Bookmark+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bookmark+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BD2AD23A25F0B00D003DA222 /* Bookmark+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bookmark+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BD6E36F1260870AD00E0A271 /* LogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
+		BDB7421125FB2FCF00E9A0D1 /* ContactMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMessageViewController.swift; sourceTree = "<group>"; };
+		CD0368E425E5DB7C00363BD0 /* Contact.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contact.xcdatamodel; sourceTree = "<group>"; };
+		CD0368E925E5DC9E00363BD0 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CD0368EA25E5DC9E00363BD0 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CD0368F725E5E70800363BD0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CD2841E725E49EF0000172B8 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		CD2841ED25E4B058000172B8 /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		CD2841F825E4B361000172B8 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		CD2841FD25E4DA0C000172B8 /* ContactAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddViewController.swift; sourceTree = "<group>"; };
+		CD5DCD1D25E3492C009CE41A /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		CD5DCD2625E34C08009CE41A /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		CD5DCD2E25E34C8B009CE41A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		CD5DCD3625E3930A009CE41A /* LSCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSCManager.swift; sourceTree = "<group>"; };
+		CD74E2C1260310DE007140A4 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		CD778D4B25DF8EA900B27871 /* Sherpa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sherpa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD778D4E25DF8EA900B27871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD778D5025DF8EA900B27871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD778D5225DF8EA900B27871 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CD778D5525DF8EA900B27871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD778D5725DF8EAA00B27871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD778D5A25DF8EAA00B27871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD778D5C25DF8EAA00B27871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD778D6125DF8EAA00B27871 /* SherpaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SherpaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD778D6525DF8EAA00B27871 /* SherpaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaTests.swift; sourceTree = "<group>"; };
+		CD778D6725DF8EAA00B27871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD778D6C25DF8EAA00B27871 /* SherpaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SherpaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD778D7025DF8EAA00B27871 /* SherpaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaUITests.swift; sourceTree = "<group>"; };
+		CD778D7225DF8EAA00B27871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD778D9325DF934700B27871 /* DefaultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultData.swift; sourceTree = "<group>"; };
+		CD778D9B25DF9A9D00B27871 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CD778DA025DFA82500B27871 /* MapCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCalculator.swift; sourceTree = "<group>"; };
+		CDDCC60D25E8905000C71AD5 /* RouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
+		CDDCC61525E8905C00C71AD5 /* Route.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Route.storyboard; sourceTree = "<group>"; };
+		CDDCC61A25E8945800C71AD5 /* RouteBookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBookmarkCell.swift; sourceTree = "<group>"; };
+		CDFB0FBE260C5A6D0083E1B1 /* UUData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUData+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		CDFB0FBF260C5A6D0083E1B1 /* UUData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUData+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		CDFC840F25E71F7B0014888B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DB0ECC25AB2BE90CE4B94C5A /* Pods_Sherpa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sherpa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04A01A3AF7BE9933D76098D /* Pods-Sherpa-SherpaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherpa-SherpaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sherpa-SherpaUITests/Pods-Sherpa-SherpaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCD581AFE726C1B80431F3AA /* Pods-Sherpa-SherpaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherpa-SherpaUITests.release.xcconfig"; path = "Target Support Files/Pods-Sherpa-SherpaUITests/Pods-Sherpa-SherpaUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD778D4825DF8EA900B27871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B350B12AC1FBF5642B0F9E /* Pods_Sherpa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD778D5E25DF8EAA00B27871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DAD6B9C2DE364B1A4A55EC6 /* Pods_SherpaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD778D6925DF8EAA00B27871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB9F8CED0EAAD68792219BC /* Pods_Sherpa_SherpaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AEF892169E59126DCEB0BF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB0ECC25AB2BE90CE4B94C5A /* Pods_Sherpa.framework */,
+				869A0544BA1C66A4ED1F3B15 /* Pods_Sherpa_SherpaUITests.framework */,
+				1E6B38FDE0E0A849741F51F1 /* Pods_SherpaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD0368F625E5E6F800363BD0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CD0368F725E5E70800363BD0 /* CoreDataManager.swift */,
+				CDFC840F25E71F7B0014888B /* NetworkManager.swift */,
+				CD5DCD3625E3930A009CE41A /* LSCManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CD2841EC25E4AFFA000172B8 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				CD2841ED25E4B058000172B8 /* Contact.storyboard */,
+				CD2841E725E49EF0000172B8 /* ContactCell.swift */,
+				CD2841F825E4B361000172B8 /* ContactViewController.swift */,
+				CD2841FD25E4DA0C000172B8 /* ContactAddViewController.swift */,
+				BDB7421125FB2FCF00E9A0D1 /* ContactMessageViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		CD5DCD2525E34BF4009CE41A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDFB0FBE260C5A6D0083E1B1 /* UUData+CoreDataClass.swift */,
+				CDFB0FBF260C5A6D0083E1B1 /* UUData+CoreDataProperties.swift */,
+				BD2AD23925F0B00D003DA222 /* Bookmark+CoreDataClass.swift */,
+				BD2AD23A25F0B00D003DA222 /* Bookmark+CoreDataProperties.swift */,
+				CD0368E925E5DC9E00363BD0 /* Contact+CoreDataClass.swift */,
+				CD0368EA25E5DC9E00363BD0 /* Contact+CoreDataProperties.swift */,
+				CD5DCD1D25E3492C009CE41A /* RequestModel.swift */,
+				CD5DCD2625E34C08009CE41A /* ResponseModel.swift */,
+				CD5DCD2E25E34C8B009CE41A /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD778D4225DF8EA900B27871 = {
+			isa = PBXGroup;
+			children = (
+				CD778D4D25DF8EA900B27871 /* Sherpa */,
+				CD778D6425DF8EAA00B27871 /* SherpaTests */,
+				CD778D6F25DF8EAA00B27871 /* SherpaUITests */,
+				CD778D4C25DF8EA900B27871 /* Products */,
+				E2C6754E34409115C14F9A4D /* Pods */,
+				2AEF892169E59126DCEB0BF6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD778D4C25DF8EA900B27871 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD778D4B25DF8EA900B27871 /* Sherpa.app */,
+				CD778D6125DF8EAA00B27871 /* SherpaTests.xctest */,
+				CD778D6C25DF8EAA00B27871 /* SherpaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD778D4D25DF8EA900B27871 /* Sherpa */ = {
+			isa = PBXGroup;
+			children = (
+				CD0368F625E5E6F800363BD0 /* Manager */,
+				CD778D8425DF8ED300B27871 /* Supporting Files */,
+				CD778D9225DF933300B27871 /* Common */,
+				CD5DCD2525E34BF4009CE41A /* Model */,
+				CD2841EC25E4AFFA000172B8 /* Contact */,
+				CDDCC60C25E8902F00C71AD5 /* Route */,
+				CD778D8B25DF926300B27871 /* Main */,
+				CD778D5C25DF8EAA00B27871 /* Info.plist */,
+				CD0368E325E5DB7C00363BD0 /* Sherpa.xcdatamodeld */,
+			);
+			path = Sherpa;
+			sourceTree = "<group>";
+		};
+		CD778D6425DF8EAA00B27871 /* SherpaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD778D6525DF8EAA00B27871 /* SherpaTests.swift */,
+				CD778D6725DF8EAA00B27871 /* Info.plist */,
+			);
+			path = SherpaTests;
+			sourceTree = "<group>";
+		};
+		CD778D6F25DF8EAA00B27871 /* SherpaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD778D7025DF8EAA00B27871 /* SherpaUITests.swift */,
+				CD778D7225DF8EAA00B27871 /* Info.plist */,
+			);
+			path = SherpaUITests;
+			sourceTree = "<group>";
+		};
+		CD778D8425DF8ED300B27871 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD778D4E25DF8EA900B27871 /* AppDelegate.swift */,
+				CD778D5025DF8EA900B27871 /* SceneDelegate.swift */,
+				CD778D5725DF8EAA00B27871 /* Assets.xcassets */,
+				CD778D5925DF8EAA00B27871 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD778D8B25DF926300B27871 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CD778D5225DF8EA900B27871 /* MainViewController.swift */,
+				CD778D5425DF8EA900B27871 /* Main.storyboard */,
+				BD6E36F1260870AD00E0A271 /* LogCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CD778D9225DF933300B27871 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CD778D9325DF934700B27871 /* DefaultData.swift */,
+				CD778D9B25DF9A9D00B27871 /* Extension.swift */,
+				CD778DA025DFA82500B27871 /* MapCalculator.swift */,
+				CD74E2C1260310DE007140A4 /* CustomViews.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CDDCC60C25E8902F00C71AD5 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				CDDCC60D25E8905000C71AD5 /* RouteViewController.swift */,
+				CDDCC61525E8905C00C71AD5 /* Route.storyboard */,
+				CDDCC61A25E8945800C71AD5 /* RouteBookmarkCell.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		E2C6754E34409115C14F9A4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30319C80D32870D43BE6F955 /* Pods-Sherpa.debug.xcconfig */,
+				2E8D8E2EA29BA05572654EA7 /* Pods-Sherpa.release.xcconfig */,
+				E04A01A3AF7BE9933D76098D /* Pods-Sherpa-SherpaUITests.debug.xcconfig */,
+				FCD581AFE726C1B80431F3AA /* Pods-Sherpa-SherpaUITests.release.xcconfig */,
+				8A3B167B5E2D0433987394FB /* Pods-SherpaTests.debug.xcconfig */,
+				24B24EC46A1A210ED1DF03B6 /* Pods-SherpaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD778D4A25DF8EA900B27871 /* Sherpa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD778D7525DF8EAA00B27871 /* Build configuration list for PBXNativeTarget "Sherpa" */;
+			buildPhases = (
+				A06947809684FFAE73B0D76D /* [CP] Check Pods Manifest.lock */,
+				CD778D4725DF8EA900B27871 /* Sources */,
+				CD778D4825DF8EA900B27871 /* Frameworks */,
+				CD778D4925DF8EA900B27871 /* Resources */,
+				E3D7643E24D587E1AE28AD09 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sherpa;
+			productName = Sherpa;
+			productReference = CD778D4B25DF8EA900B27871 /* Sherpa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD778D6025DF8EAA00B27871 /* SherpaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD778D7825DF8EAA00B27871 /* Build configuration list for PBXNativeTarget "SherpaTests" */;
+			buildPhases = (
+				1029C39BAF7EFB39855145A2 /* [CP] Check Pods Manifest.lock */,
+				CD778D5D25DF8EAA00B27871 /* Sources */,
+				CD778D5E25DF8EAA00B27871 /* Frameworks */,
+				CD778D5F25DF8EAA00B27871 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD778D6325DF8EAA00B27871 /* PBXTargetDependency */,
+			);
+			name = SherpaTests;
+			productName = SherpaTests;
+			productReference = CD778D6125DF8EAA00B27871 /* SherpaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD778D6B25DF8EAA00B27871 /* SherpaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD778D7B25DF8EAA00B27871 /* Build configuration list for PBXNativeTarget "SherpaUITests" */;
+			buildPhases = (
+				C4EFFD4982C0BFB8156CC4C3 /* [CP] Check Pods Manifest.lock */,
+				CD778D6825DF8EAA00B27871 /* Sources */,
+				CD778D6925DF8EAA00B27871 /* Frameworks */,
+				CD778D6A25DF8EAA00B27871 /* Resources */,
+				6CB6744CD3F4842326C961B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD778D6E25DF8EAA00B27871 /* PBXTargetDependency */,
+			);
+			name = SherpaUITests;
+			productName = SherpaUITests;
+			productReference = CD778D6C25DF8EAA00B27871 /* SherpaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD778D4325DF8EA900B27871 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CD778D4A25DF8EA900B27871 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CD778D6025DF8EAA00B27871 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CD778D4A25DF8EA900B27871;
+					};
+					CD778D6B25DF8EAA00B27871 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CD778D4A25DF8EA900B27871;
+					};
+				};
+			};
+			buildConfigurationList = CD778D4625DF8EA900B27871 /* Build configuration list for PBXProject "Sherpa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD778D4225DF8EA900B27871;
+			productRefGroup = CD778D4C25DF8EA900B27871 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD778D4A25DF8EA900B27871 /* Sherpa */,
+				CD778D6025DF8EAA00B27871 /* SherpaTests */,
+				CD778D6B25DF8EAA00B27871 /* SherpaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD778D4925DF8EA900B27871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD778D5B25DF8EAA00B27871 /* LaunchScreen.storyboard in Resources */,
+				CDDCC61625E8905C00C71AD5 /* Route.storyboard in Resources */,
+				CD2841EE25E4B058000172B8 /* Contact.storyboard in Resources */,
+				CD778D5825DF8EAA00B27871 /* Assets.xcassets in Resources */,
+				CD778D5625DF8EA900B27871 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD778D5F25DF8EAA00B27871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD778D6A25DF8EAA00B27871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1029C39BAF7EFB39855145A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SherpaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CB6744CD3F4842326C961B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sherpa-SherpaUITests/Pods-Sherpa-SherpaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sherpa-SherpaUITests/Pods-Sherpa-SherpaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sherpa-SherpaUITests/Pods-Sherpa-SherpaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A06947809684FFAE73B0D76D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sherpa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4EFFD4982C0BFB8156CC4C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sherpa-SherpaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D7643E24D587E1AE28AD09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sherpa/Pods-Sherpa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sherpa/Pods-Sherpa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sherpa/Pods-Sherpa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD778D4725DF8EA900B27871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFC841025E71F7B0014888B /* NetworkManager.swift in Sources */,
+				CD5DCD1E25E3492C009CE41A /* RequestModel.swift in Sources */,
+				CD5DCD3725E3930A009CE41A /* LSCManager.swift in Sources */,
+				CD778D5325DF8EA900B27871 /* MainViewController.swift in Sources */,
+				BD2AD23B25F0B00D003DA222 /* Bookmark+CoreDataClass.swift in Sources */,
+				CD778D4F25DF8EA900B27871 /* AppDelegate.swift in Sources */,
+				CD0368F825E5E70800363BD0 /* CoreDataManager.swift in Sources */,
+				CD0368EC25E5DC9E00363BD0 /* Contact+CoreDataProperties.swift in Sources */,
+				CD0368EB25E5DC9E00363BD0 /* Contact+CoreDataClass.swift in Sources */,
+				CD74E2C2260310DE007140A4 /* CustomViews.swift in Sources */,
+				CD778DA125DFA82500B27871 /* MapCalculator.swift in Sources */,
+				CD2841F925E4B361000172B8 /* ContactViewController.swift in Sources */,
+				CD778D9425DF934700B27871 /* DefaultData.swift in Sources */,
+				CD2841FE25E4DA0C000172B8 /* ContactAddViewController.swift in Sources */,
+				BD2AD23C25F0B00D003DA222 /* Bookmark+CoreDataProperties.swift in Sources */,
+				CD0368E525E5DB7C00363BD0 /* Sherpa.xcdatamodeld in Sources */,
+				CD2841E825E49EF0000172B8 /* ContactCell.swift in Sources */,
+				CD778D9C25DF9A9D00B27871 /* Extension.swift in Sources */,
+				CD5DCD2725E34C08009CE41A /* ResponseModel.swift in Sources */,
+				CD778D5125DF8EA900B27871 /* SceneDelegate.swift in Sources */,
+				BD6E36F2260870AD00E0A271 /* LogCell.swift in Sources */,
+				CDFB0FC0260C5A6D0083E1B1 /* UUData+CoreDataClass.swift in Sources */,
+				CD5DCD2F25E34C8B009CE41A /* DataModel.swift in Sources */,
+				CDFB0FC1260C5A6D0083E1B1 /* UUData+CoreDataProperties.swift in Sources */,
+				CDDCC60E25E8905000C71AD5 /* RouteViewController.swift in Sources */,
+				CDDCC61B25E8945800C71AD5 /* RouteBookmarkCell.swift in Sources */,
+				BDB7421225FB2FCF00E9A0D1 /* ContactMessageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD778D5D25DF8EAA00B27871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD778D6625DF8EAA00B27871 /* SherpaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD778D6825DF8EAA00B27871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD778D7125DF8EAA00B27871 /* SherpaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD778D6325DF8EAA00B27871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD778D4A25DF8EA900B27871 /* Sherpa */;
+			targetProxy = CD778D6225DF8EAA00B27871 /* PBXContainerItemProxy */;
+		};
+		CD778D6E25DF8EAA00B27871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD778D4A25DF8EA900B27871 /* Sherpa */;
+			targetProxy = CD778D6D25DF8EAA00B27871 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD778D5425DF8EA900B27871 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD778D5525DF8EA900B27871 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD778D5925DF8EAA00B27871 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD778D5A25DF8EAA00B27871 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD778D7325DF8EAA00B27871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD778D7425DF8EAA00B27871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD778D7625DF8EAA00B27871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30319C80D32870D43BE6F955 /* Pods-Sherpa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = 3C35N3GB94;
+				INFOPLIST_FILE = Sherpa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poliot.sherpa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CD778D7725DF8EAA00B27871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8D8E2EA29BA05572654EA7 /* Pods-Sherpa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_TEAM = 3C35N3GB94;
+				INFOPLIST_FILE = Sherpa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poliot.sherpa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CD778D7925DF8EAA00B27871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3B167B5E2D0433987394FB /* Pods-SherpaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C35N3GB94;
+				INFOPLIST_FILE = SherpaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Poliot.SherpaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sherpa.app/Sherpa";
+			};
+			name = Debug;
+		};
+		CD778D7A25DF8EAA00B27871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B24EC46A1A210ED1DF03B6 /* Pods-SherpaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C35N3GB94;
+				INFOPLIST_FILE = SherpaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Poliot.SherpaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sherpa.app/Sherpa";
+			};
+			name = Release;
+		};
+		CD778D7C25DF8EAA00B27871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04A01A3AF7BE9933D76098D /* Pods-Sherpa-SherpaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C35N3GB94;
+				INFOPLIST_FILE = SherpaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Poliot.SherpaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sherpa;
+			};
+			name = Debug;
+		};
+		CD778D7D25DF8EAA00B27871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD581AFE726C1B80431F3AA /* Pods-Sherpa-SherpaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C35N3GB94;
+				INFOPLIST_FILE = SherpaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Poliot.SherpaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sherpa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD778D4625DF8EA900B27871 /* Build configuration list for PBXProject "Sherpa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD778D7325DF8EAA00B27871 /* Debug */,
+				CD778D7425DF8EAA00B27871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD778D7525DF8EAA00B27871 /* Build configuration list for PBXNativeTarget "Sherpa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD778D7625DF8EAA00B27871 /* Debug */,
+				CD778D7725DF8EAA00B27871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD778D7825DF8EAA00B27871 /* Build configuration list for PBXNativeTarget "SherpaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD778D7925DF8EAA00B27871 /* Debug */,
+				CD778D7A25DF8EAA00B27871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD778D7B25DF8EAA00B27871 /* Build configuration list for PBXNativeTarget "SherpaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD778D7C25DF8EAA00B27871 /* Debug */,
+				CD778D7D25DF8EAA00B27871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD0368E325E5DB7C00363BD0 /* Sherpa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD0368E425E5DB7C00363BD0 /* Contact.xcdatamodel */,
+			);
+			currentVersion = CD0368E425E5DB7C00363BD0 /* Contact.xcdatamodel */;
+			path = Sherpa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD778D4325DF8EA900B27871 /* Project object */;
+}
